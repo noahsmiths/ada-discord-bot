@@ -1,3 +1,3 @@
-# crypto-prices-discord-bot
+# ada-price-bot
  
 Bot
