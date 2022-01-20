@@ -27,12 +27,12 @@ const updateData = async () => {
                         fields: [
                             {
                                 name: "Chain Load:",
-                                value: `5m: ${poolData.load_5m.toFixed(3) * 100}%\n1hr: ${poolData.load_1h.toFixed(3) * 100}%\n24hr: ${poolData.load_24h.toFixed(3) * 100}%`, //Rounds data to 1 decimal place
+                                value: `5m: ${(poolData.load_5m * 100).toFixed(1)}%\n1hr: ${(poolData.load_1h * 100).toFixed(1)}%\n24hr: ${(poolData.load_24h * 100).toFixed(1)}%`, //Rounds data to 1 decimal place
                                 inline: true
                             },
                             {
                                 name: "Token Prices:",
-                                value: `ADA Price: $${poolData.ADAUSD}\nPavia: ${paviaData.price_change_dict.priceADA} ADA`,
+                                value: `ADA Price: $${poolData.ADAUSD}\nPavia: ${paviaData.price_change_dict.priceADA.toFixed(6)} ADA`,
                                 inline: true
                             }
                         ],
