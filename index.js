@@ -47,10 +47,11 @@ const updateData = async () => {
             }
         );
 
-        setTimeout(updateData, process.env.REFRESH_INTERVAL_MS);
     } catch (e) {
         updateChannel.send(`Error.\n${e}`);
     }
+
+    setTimeout(updateData, process.env.REFRESH_INTERVAL_MS);
 }
 
 client.on('ready', async () => {
