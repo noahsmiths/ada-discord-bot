@@ -83,7 +83,6 @@ client.on('ready', async () => {
     //let message = await updateChannel.messages.fetch(process.env.MESSAGE_ID);
     //message.edit("hello");
     //updateChannel.send('First Message');
-    //console.log(await client.channels.fetch('594215990129197088'));
     
 });
 
